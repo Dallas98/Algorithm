@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/resources/Lab1test.DAT" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/resources/Lab3test.DAT" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/HomeWork/SplayTreeTest.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab1/SeqList.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab2/LLAPP.C" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab2/LLAPP.H" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab2/LLGEN.C" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab2/LLGEN.H" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
