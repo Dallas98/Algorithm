@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lab4.dir/src/Lab4/LevelBiTree.cpp.o  -o Lab4 

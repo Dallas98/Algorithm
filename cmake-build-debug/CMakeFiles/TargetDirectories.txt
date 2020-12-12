@@ -1,0 +1,9 @@
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Lab4.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Hash.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/LinkList.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/SeqList.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/BR.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/SplayTree.dir
+/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Lab2.dir

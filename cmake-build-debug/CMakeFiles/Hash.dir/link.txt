@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Hash.dir/src/Lab3/HashTest.cpp.o  -o Hash 
