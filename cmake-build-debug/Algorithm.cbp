@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Algorithm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BR">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/BR.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 BR"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BR/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/BR.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 BR/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinkList">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/LinkList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkList"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinkList/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/LinkList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkList/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SplayTree">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/SplayTree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 SplayTree"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SplayTree/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/SplayTree.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 SplayTree/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SeqList">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/SeqList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 SeqList"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SeqList/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/SeqList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 SeqList/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Hash">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Hash.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Hash"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Hash/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Hash.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Hash/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="F:/Project/Algorithm/src/HomeWork/RBTreeTest.cpp">
+			<Option target="BR"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/HomeWork/SplayTreeTest.cpp">
+			<Option target="SplayTree"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab1/LinkList.cpp">
+			<Option target="LinkList"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab1/SeqList.cpp">
+			<Option target="SeqList"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab2/Palindrome.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab3/HashTest.cpp">
+			<Option target="Hash"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
