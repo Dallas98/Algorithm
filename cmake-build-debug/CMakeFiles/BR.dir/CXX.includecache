@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Project/Algorithm/src/Lab1/BRTree.cpp
+cstdlib
+-
+iostream
+-
+RBTree.h
+F:/Project/Algorithm/src/Lab1/RBTree.h
+
+F:/Project/Algorithm/src/Lab1/RBTree.h
+iomanip
+-
+iostream
+-
+

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+"E:\JetBrains\CLion\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" F:\Project\Algorithm
+-- Configuring done
+-- Generating done
+-- Build files have been written to: F:/Project/Algorithm/cmake-build-debug
+=======
 /home/dallas/Soft/CLion/clion-2020.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dallas/CLionProjects/Algorithm
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/dallas/CLionProjects/Algorithm/cmake-build-debug
+>>>>>>> 0a90f4ad18435271b4255d2c861a76467d15fea1
