@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ToolSet: w64 6.0 (local)@E:\EnvironmentSettings\MinGW\mingw64
 Options: 
+=======
+ToolSet: 1.0 (local)Options: 
+>>>>>>> 0a90f4ad18435271b4255d2c861a76467d15fea1
 
 Options:
