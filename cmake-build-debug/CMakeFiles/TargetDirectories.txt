@@ -1,20 +1,9 @@
-<<<<<<< HEAD
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-F:/Project/Algorithm/cmake-build-debug/CMakeFiles/BR.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/LinkList.dir
+F:/Project/Algorithm/cmake-build-debug/CMakeFiles/BR.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/SplayTree.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/SeqList.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Lab2.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Hash.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
-=======
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Lab4.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Hash.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/LinkList.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/SeqList.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/BR.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/SplayTree.dir
-/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Lab2.dir
->>>>>>> 0a90f4ad18435271b4255d2c861a76467d15fea1
+F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Lab4.dir

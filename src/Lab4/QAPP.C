@@ -115,8 +115,8 @@ int NodeDataCmp2 ( void *first, void *second )
 int DataCopy ( void * dest, void * src )
 {
     pND2 s,d;
-    s = src;
-    d = dest;
+    s = static_cast<pND2>(src);
+    d = static_cast<pND2>(dest);
 
     if ( dest == NULL || src == NULL )
         return ( 0 );

@@ -22,7 +22,7 @@ int enqueue ( struct List *, struct List *, void * );
 
 #define QMAX 100    /* maximum number of elements in a queue */
 
-main ( int argc, char *argv [] )
+int main ( int argc, char *argv [] )
 {
     char     record[64];      /* the raw word from the file */
     int      count;

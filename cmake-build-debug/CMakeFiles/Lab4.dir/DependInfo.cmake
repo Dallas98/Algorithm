@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dallas/CLionProjects/Algorithm/src/Lab4/LevelBiTree.cpp" "/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Lab4.dir/src/Lab4/LevelBiTree.cpp.o"
+  "F:/Project/Algorithm/src/Lab4/BINTREE.cpp" "F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Lab4.dir/src/Lab4/BINTREE.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,3 +1,0 @@
-"E:\JetBrains\CLion\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Splay.dir/objects.a
-E:\EnvironmentSettings\MinGW\mingw64\bin\ar.exe cr CMakeFiles\Splay.dir/objects.a @CMakeFiles\Splay.dir\objects1.rsp
-E:\EnvironmentSettings\MinGW\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Splay.dir/objects.a -Wl,--no-whole-archive  -o Splay.exe -Wl,--out-implib,libSplay.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Splay.dir\linklibs.rsp

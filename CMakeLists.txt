@@ -13,7 +13,7 @@ add_executable(SplayTree src/HomeWork/SplayTreeTest.cpp)
 add_executable(Hash src/Lab3/HashTest.cpp)
 
 
-add_executable(Lab4 src/Lab4/LevelBiTree.cpp)
+add_executable(Lab4 src/Lab4/BINTREE.cpp)
 
 
 

@@ -4,11 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
   "F:/Project/Algorithm/src/Lab3/HashTest.cpp" "F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Hash.dir/src/Lab3/HashTest.cpp.obj"
-=======
-  "/home/dallas/CLionProjects/Algorithm/src/Lab3/HashTest.cpp" "/home/dallas/CLionProjects/Algorithm/cmake-build-debug/CMakeFiles/Hash.dir/src/Lab3/HashTest.cpp.o"
->>>>>>> 0a90f4ad18435271b4255d2c861a76467d15fea1
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
