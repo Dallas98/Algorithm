@@ -4,18 +4,19 @@
  *-------------------------------------------------------------*/
 
 #define TEST
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include "bintree.h"
 #include "stacks.h"
-
+#include "bintree.h"
+#include <stack>
 
 
 /* A safe malloc() */
-static void * tmalloc(size_t size)
-{
+static void *tmalloc(size_t size) {
     void *p;
     if ((p = malloc(size)) == NULL) {
         printf("Out of memory\n");
@@ -29,65 +30,62 @@ static void * tmalloc(size_t size)
  * Create and initialize a node for the user. 'size' both can
  * and should be greater than sizeof(Bnode) to allow for a
  * data area for the user.
+ * 为用户创建并初始化一个节点。'size'可以并且应该大于sizeof(Bnode)以允许为用户提供一个*数据区域
  */
-Bnode *InitBintreeNode(size_t size)
-{
+Bnode *InitBintreeNode(size_t size) {
     Bnode *n;
 
-    n = tmalloc(size);
-    n -> link[LEFT] = n -> link[RIGHT]  = NULL;
+    n = static_cast<Bnode *>(tmalloc(size));
+    n->link[LEFT] = n->link[RIGHT] = NULL;
 
     return n;
 }
 
 /* Create an empty tree */
-Bintree *NewBintree (Bnode *dummy,
-    CompFunc cf,
-    int dup_ok,
-    size_t node_size)
-{
+Bintree *NewBintree(Bnode *dummy,
+                    CompFunc cf,
+                    int dup_ok,
+                    size_t node_size) {
     Bintree *t;
 
-    t = tmalloc(sizeof(Bintree));
-    t -> DummyHead = dummy;
-    t -> Compare = cf;
-    t -> DuplicatesOk = dup_ok;
-    t -> NodeSize = node_size;
+    t = static_cast<Bintree *>(tmalloc(sizeof(Bintree)));
+    t->DummyHead = dummy;
+    t->Compare = cf;
+    t->DuplicatesOk = dup_ok;
+    t->NodeSize = node_size;
 
     return t;
 }
 
 
 /* Find node n in tree t */
-Bnode *FindBintree(Bintree *t, Bnode *n)
-{
+Bnode *FindBintree(Bintree *t, Bnode *n) {
     Bnode *s;
     int dir;
 
-    s = t -> DummyHead -> link[RIGHT];
+    s = t->DummyHead->link[RIGHT];
     while (s != NULL) {
-        dir = (t -> Compare) (n, s);
+        dir = (t->Compare)(n, s);
         /*
          * If a match, we're done.
          * For Red-Black, must also be a leaf.
          */
-        if (dir == 0 )
+        if (dir == 0)
             return s;
         dir = dir < 0;
-        s = s -> link[dir];
+        s = s->link[dir];
     }
     return NULL; /* no match */
 
 }
 
-Bnode * DelBintree (Bintree *t, Bnode *n)
-{
+Bnode *DelBintree(Bintree *t, Bnode *n) {
 
     Bnode *p, *s, *save;
     int dir, dir_old;
 
-    p = t -> DummyHead;
-    s = p -> link[RIGHT];
+    p = t->DummyHead;
+    s = p->link[RIGHT];
     dir_old = dir = RIGHT;
 
     /* Look for a match */
@@ -95,7 +93,7 @@ Bnode * DelBintree (Bintree *t, Bnode *n)
         p = s;
         dir = dir < 0;
         dir_old = dir;
-        s = p -> link[dir];
+        s = p->link[dir];
     }
 
     if (s == NULL)
@@ -106,65 +104,64 @@ Bnode * DelBintree (Bintree *t, Bnode *n)
      * First case: if s has no right child, then replace s
      * with s's left child.
      */
-    if (s -> link[RIGHT] == NULL)
-        s = s -> link[LEFT];
-    /*
-     * Second case: if s has a right child that lacks a left
-     * child, then replace s with s's right child and
-     * copy s's left child into the right child's left child.
-     */
-    else if (s -> link[RIGHT] -> link[LEFT] == NULL) {
-        s = s -> link[RIGHT];
-        s -> link[LEFT] = save -> link[LEFT];
+    if (s->link[RIGHT] == NULL)
+        s = s->link[LEFT];
+        /*
+         * Second case: if s has a right child that lacks a left
+         * child, then replace s with s's right child and
+         * copy s's left child into the right child's left child.
+         */
+    else if (s->link[RIGHT]->link[LEFT] == NULL) {
+        s = s->link[RIGHT];
+        s->link[LEFT] = save->link[LEFT];
     }
-    /*
-     * Final case: find leftmost (smallest) node in s's right
-     * subtree. By definition, this node has an empty left
-     * link. Free this node by copying its right link to
-     * its parent's left link and then give it both of s's
-     * links (thus replacing s).
-     */
+        /*
+         * Final case: find leftmost (smallest) node in s's right
+         * subtree. By definition, this node has an empty left
+         * link. Free this node by copying its right link to
+         * its parent's left link and then give it both of s's
+         * links (thus replacing s).
+         */
     else {
         Bnode *small;
 
-        small = s -> link[RIGHT];
-        while (small -> link[LEFT] -> link[LEFT])
-            small = small -> link[LEFT];
-        s = small -> link[LEFT];
-        small -> link[LEFT] = s -> link[RIGHT];
-        s -> link[LEFT] = save -> link[LEFT];
-        s -> link[RIGHT] = save -> link[RIGHT];
+        small = s->link[RIGHT];
+        while (small->link[LEFT]->link[LEFT])
+            small = small->link[LEFT];
+        s = small->link[LEFT];
+        small->link[LEFT] = s->link[RIGHT];
+        s->link[LEFT] = save->link[LEFT];
+        s->link[RIGHT] = save->link[RIGHT];
     }
 
-    p -> link[dir_old] = s;
+    p->link[dir_old] = s;
 
     return save;
 }
 
 /* Insert node n into tree t */
-int InsBintree (Bintree *t, Bnode *n)
-{
+int InsBintree(Bintree *t, Bnode *n) {
     int p_dir;
     Bnode *p, *s;
 
     /* Search until we find an empty arm. */
-    p = t -> DummyHead;
+    p = t->DummyHead;
     p_dir = RIGHT; /* direction from p to s */
-    s = p -> link[RIGHT];
+    s = p->link[RIGHT];
 
     while (s != NULL) {
         p = s;
-        p_dir = (t -> Compare) (n, s);
-        if (p_dir == 0 && t -> DuplicatesOk == 0)
+        p_dir = (t->Compare)(n, s);
+        if (p_dir == 0 && t->DuplicatesOk == 0)
             return TREE_FAIL; /* duplicate */
         p_dir = p_dir < 0;
-		//printf(" Compare with '%s'.", ((struct sMynode *)s) -> text);
-        s = s -> link[p_dir];
+        //printf(" Compare with '%s'.", ((struct sMynode *)s) -> text);
+        s = s->link[p_dir];
     }
 
     /* Add the new node */
-    p -> link[p_dir] = n;
-	//printf("\n");
+    p->link[p_dir] = n;
+    //printf("\n");
     return TREE_OK;
 
 }
@@ -174,23 +171,21 @@ int InsBintree (Bintree *t, Bnode *n)
  * WalkBintree. It will do an inorder traversal of the
  * tree, call df() for each node and leaf.
  */
-void rWalk(Bnode *n, int level, DoFunc df)
-{
+void rWalk(Bnode *n, int level, DoFunc df) {
     if (n != NULL) {
-        rWalk(n -> link[LEFT], level + 1, df);
+        rWalk(n->link[LEFT], level + 1, df);
         df(n, level);
-        rWalk(n -> link[RIGHT], level + 1, df);
+        rWalk(n->link[RIGHT], level + 1, df);
     }
 }
 
-int WalkBintree(Bintree *t, DoFunc df)
-{
-    if (t -> DummyHead -> link[RIGHT] == NULL) {
+int WalkBintree(Bintree *t, DoFunc df) {
+    if (t->DummyHead->link[RIGHT] == NULL) {
         fputs("Empty tree\n", stdout);
         return TREE_FAIL;
     }
 
-    rWalk(t -> DummyHead -> link[RIGHT], 0, df);
+    rWalk(t->DummyHead->link[RIGHT], 0, df);
     return TREE_OK;
 }
 
@@ -202,9 +197,7 @@ int WalkBintree(Bintree *t, DoFunc df)
 #define BUFLEN 100
 
 
-
-int LoadString(Bintree *t, char *string)
-{
+int LoadString(Bintree *t, char *string) {
     Mynode *m;
 
     m = (Mynode *) InitBintreeNode(sizeof(Mynode));
@@ -214,31 +207,28 @@ int LoadString(Bintree *t, char *string)
     return InsBintree(t, (Bnode *) m);
 }
 
-void FindString(Bintree *t, char *string)
-{
+void FindString(Bintree *t, char *string) {
     Mynode m, *r;
     strncpy(m.text, string, sizeof(m.text));
     m.text[sizeof(m.text) - 1] = 0;
     if ((r = (Mynode *) FindBintree(t, (Bnode *) &m)) == NULL)
         puts(" Not found.\n");
     else
-        printf(" Found '%s'.\n", r -> text);
+        printf(" Found '%s'.\n", r->text);
 }
 
-void DeleteString(Bintree *t, char *string)
-{
+void DeleteString(Bintree *t, char *string) {
     Mynode m, *n;
     strncpy(m.text, string, sizeof(m.text));
     m.text[sizeof(m.text) - 1] = 0;
     n = (Mynode *) DelBintree(t, (Bnode *) &m);
     if (n)
-        free (n);
+        free(n);
     else
         fprintf(stdout, " Did not find '%s'.\n", string);
 }
 
-void LoadFile(Bintree *t, char *fname)
-{
+void LoadFile(Bintree *t, char *fname) {
     FILE *infile;
     char buffer[BUFLEN], *s;
     int i = 0, j = 0;
@@ -250,15 +240,14 @@ void LoadFile(Bintree *t, char *fname)
 
     while (fgets(buffer, BUFLEN, infile)) {
         s = buffer + strlen(buffer);
-        while(iscntrl(*s))
+        while (iscntrl(*s))
             *s-- = 0;
         if (buffer[0] == ';') /* a comment */
             ;
         else if (buffer[0] == '-' && buffer[1] != 0) {
-            DeleteString(t, buffer+1);
+            DeleteString(t, buffer + 1);
             j++;
-        }
-        else {
+        } else {
             LoadString(t, buffer);
             i++;
         }
@@ -266,18 +255,17 @@ void LoadFile(Bintree *t, char *fname)
 
     fclose(infile);
     printf("Loaded %d items and deleted %d from %s.\n",
-        i, j, fname);
+           i, j, fname);
 }
 
 /*
  * A sample action function: it prints out the data
  * at each node along with the node's level in the tree
  */
-int ShowFunc(void *m, int level)
-{
+int ShowFunc(void *m, int level) {
 
-   fprintf(stdout, "%s (%d)\n",
-        ((Mynode *)m) -> text, level);
+    fprintf(stdout, "%s (%d)\n",
+            ((Mynode *) m)->text, level);
 
     return TREE_OK;
 }
@@ -288,21 +276,20 @@ int ShowFunc(void *m, int level)
  */
 
 #if !defined(ALTDRAW)
-  #define TOP '+'  //yyw
-  #define BOT '+'  //yyw
-  #define HOR '-' //yyw
-  #define VRT '|' //yyw
-  //#define TOP '?
-  //#define BOT '?
-  //#define HOR '?
-  //#define VRT '?
+#define TOP '+'  //yyw
+#define BOT '+'  //yyw
+#define HOR '-' //yyw
+#define VRT '|' //yyw
+//#define TOP '?
+//#define BOT '?
+//#define HOR '?
+//#define VRT '?
 #else
-  #define TOP '/'
-  #define BOT '\\'
-  #define HOR '-'
-  #define VRT '|'
+#define TOP '/'
+#define BOT '\\'
+#define HOR '-'
+#define VRT '|'
 #endif
-
 
 
 #define DRAWBUF 100
@@ -311,8 +298,7 @@ char work[DRAWBUF * 2];
 int maxdepth;
 FILE *outfile;
 
-void xrWalk(Bnode *n, int level)
-{
+void xrWalk(Bnode *n, int level) {
     int i;
 
     if (n != NULL) {
@@ -325,7 +311,7 @@ void xrWalk(Bnode *n, int level)
          */
         draw[level * 2] = TOP;
         draw[level * 2 + 1] = ' ';
-        xrWalk(n -> link[RIGHT], level + 1);
+        xrWalk(n->link[RIGHT], level + 1);
 
         /*
          * Show current node
@@ -342,7 +328,7 @@ void xrWalk(Bnode *n, int level)
                     c = work[i];
 
             work[level * 2 - 1] =
-                HOR;
+                    HOR;
 
             for (i = 0; i < level * 2 - 2; i += 2)
                 if (work[i] != ' ') {
@@ -351,7 +337,7 @@ void xrWalk(Bnode *n, int level)
         }
 
         sprintf(work + level * 2, "%s (%d)",
-                            ((Mynode *)n)->text, level);
+                ((Mynode *) n)->text, level);
         fputs(work, outfile);
 
         fputs("\n", outfile);
@@ -361,14 +347,13 @@ void xrWalk(Bnode *n, int level)
          */
         draw[level * 2] = BOT;
         draw[level * 2 + 1] = ' ';
-        xrWalk(n -> link[LEFT], level + 1);
+        xrWalk(n->link[LEFT], level + 1);
 
     }
 }
 
-int xWalkBintree(Bintree *t, char *name, char *mode)
-{
-    if (t -> DummyHead -> link[RIGHT] == NULL) {
+int xWalkBintree(Bintree *t, const char *name, const char *mode) {
+    if (t->DummyHead->link[RIGHT] == NULL) {
         fputs("Empty tree\n", stdout);
         return TREE_FAIL;
     }
@@ -385,7 +370,7 @@ int xWalkBintree(Bintree *t, char *name, char *mode)
         }
     }
 
-    xrWalk(t -> DummyHead -> link[RIGHT], 0);
+    xrWalk(t->DummyHead->link[RIGHT], 0);
     fprintf(outfile, "Max depth %d.\n", maxdepth);
 
     if (name)
@@ -397,27 +382,82 @@ int xWalkBintree(Bintree *t, char *name, char *mode)
 }
 
 int compare_length = 0;
-int CompareFunc(void *n1, void *n2)
-{
-    if (compare_length)
-        return strncmp(((Mynode *)n1)->text,
-        ((Mynode *)n2)->text,
-        compare_length);
-    else
-        return strcmp(((Mynode *)n1)->text,
-        ((Mynode *)n2)->text);
-}
 
+int CompareFunc(void *n1, void *n2) {
+    if (compare_length)
+        return strncmp(((Mynode *) n1)->text,
+                       ((Mynode *) n2)->text,
+                       compare_length);
+    else
+        return strcmp(((Mynode *) n1)->text,
+                      ((Mynode *) n2)->text);
+}
 
 
 int WalkBintreeByStack(Bintree *t, DoFunc df)//yyw
 {
-	// to do...
-	
+    Stack *stack = CreateStack(40);
+    if (stack == NULL) {
+        fprintf(stderr, "Insufficient Memory\n");
+        exit(EXIT_FAILURE);
+    }
+
+    struct StkElement *stkElement = (struct StkElement *) malloc(sizeof(struct StkElement));
+    if (stkElement == NULL) {
+        fprintf(stderr, "Insufficient memory\n");
+        exit(EXIT_FAILURE);
+    }
+
+    Bnode *bnode = t->DummyHead->link[RIGHT];
+    if (bnode == NULL) {
+        printf("The tree is emtpy");
+        exit(0);
+    }
+    stkElement = reinterpret_cast<StkElement *>(bnode);
+    StkElement *temp;
+
+    // @resources/Lab5_2.DAT
+    while (stkElement || stack->top > -1) {
+        while (stkElement) {
+            PushElement(stack, stkElement);
+            stkElement = stkElement->link[LEFT];
+        }
+        stkElement = &(stack->base)[stack->top];
+        if (stack->top > -1) {
+            PopElement(stack, stkElement);
+            printf("%s ", stkElement->text);
+            //df(stkElement, level);
+            stkElement = stkElement->link[RIGHT];
+        }
+    }
+    printf("\n");
+    return TREE_OK;
 }
 
-int main(int argc, char **argv)
-{
+
+void InOrderWithoutRecursion(Bintree *tree) {
+    //空树
+    Bnode *bnode = tree->DummyHead->link[RIGHT];
+    if (bnode == NULL)
+        return;
+    //树非空
+    Bnode *p = bnode;
+    std::stack<Bnode *> s;
+    while (!s.empty() || p) {
+        while (p) {
+            s.push(p);
+            p = p->link[LEFT];
+        }
+        if (!s.empty()) {
+            p = s.top();
+            s.pop();
+            printf("%s ", ((Mynode *) p)->text);
+            p = p->link[RIGHT];
+        }
+    }
+}
+
+int main(int argc, char **argv) {
     char inbuf[BUFLEN], *s;
     Bintree *tree;
     Mynode *dummy;
@@ -428,27 +468,26 @@ int main(int argc, char **argv)
 
     /* create a tree */
     tree = NewBintree((Bnode *) dummy,
-                        CompareFunc, 1, sizeof(Mynode));
+                      CompareFunc, 1, sizeof(Mynode));
 
     for (;;) {
         fputs("Action (? for help): ", stdout);
         fflush(stdout);
         fgets(inbuf, BUFLEN, stdin);
         s = inbuf + strlen(inbuf);
-        while(iscntrl(*s))
+        while (iscntrl(*s))
             *s-- = 0;
 
         switch (inbuf[0]) {
             case '?':
                 fputs(
-                    "@file     - Load strings in file to tree\n"
-                    "d string  - Delete string from tree\n"
-                    "dup [0|1] - Disallow/allow duplicates\n"
-                    "s [file]  - Display tree (overwrite file)\n"
-                    "w         - Walk tree, running ShowFunc()\n"
-					"t         - Walk tree By Stack, running ShowFunc()\n"
-                    "q         - Quit\n"
-                    , stdout);
+                        "@file     - Load strings in file to tree\n"
+                        "d string  - Delete string from tree\n"
+                        "dup [0|1] - Disallow/allow duplicates\n"
+                        "s [file]  - Display tree (overwrite file)\n"
+                        "w         - Walk tree, running ShowFunc()\n"
+                        "t         - Walk tree By Stack, running ShowFunc()\n"
+                        "q         - Quit\n", stdout);
                 fflush(stdout);
                 break;
 
@@ -460,10 +499,10 @@ int main(int argc, char **argv)
                 if (inbuf[1] == 'u' && inbuf[2] == 'p') {
                     if (inbuf[3] == ' ' &&
                         (inbuf[4] == '0' || inbuf[4] == '1'))
-                        tree -> DuplicatesOk =
-                        inbuf[4] == '0' ? 0 : 1;
+                        tree->DuplicatesOk =
+                                inbuf[4] == '0' ? 0 : 1;
                     fputs("Duplicates are ", stdout);
-                    if (tree -> DuplicatesOk == 0)
+                    if (tree->DuplicatesOk == 0)
                         fputs("not ", stdout);
                     fputs("allowed.\n", stdout);
                     break;
@@ -478,10 +517,9 @@ int main(int argc, char **argv)
                 break;
 
 
-            case 's': 
+            case 's':
                 if (inbuf[1] == ' ' && inbuf[2] != 0)
-                    xWalkBintree(tree, inbuf + 2,
-                    inbuf[0] == 's' ? "w" : "a");
+                    xWalkBintree(tree, inbuf + 2, inbuf[0] == 's' ? "w" : "a");
                 else
                     xWalkBintree(tree, NULL, NULL);
                 break;
@@ -490,12 +528,13 @@ int main(int argc, char **argv)
                 WalkBintree(tree, ShowFunc);
                 break;
 
-			case 't':
+            case 't':
                 WalkBintreeByStack(tree, ShowFunc);
+                //InOrderWithoutRecursion(tree);
                 break;
 
             case 'q':
-                return;
+                return 0;
 
             case ';':
                 break;  /* comment */
@@ -506,4 +545,5 @@ int main(int argc, char **argv)
         }
     }
 }
+
 #endif

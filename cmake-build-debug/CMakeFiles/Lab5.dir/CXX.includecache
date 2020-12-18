@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Project/Algorithm/src/Lab5/BINTREE.C
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+stacks.h
+F:/Project/Algorithm/src/Lab5/stacks.h
+bintree.h
+F:/Project/Algorithm/src/Lab5/bintree.h
+stack
+-
+
+F:/Project/Algorithm/src/Lab5/bintree.h
+
+F:/Project/Algorithm/src/Lab5/stacks.h
+

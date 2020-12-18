@@ -10,7 +10,7 @@
 
 
 typedef struct sBnode {
-   struct sBnode *link[2];
+    struct sBnode *link[2];
 } Bnode;
 
 /* Our binary tree is made up of these */
@@ -21,8 +21,9 @@ typedef struct sMynode {
 } Mynode;
 
 /* Control structure for a binary tree */
-typedef int (*CompFunc) (void *node1, void *node2);
-typedef int (*DoFunc) (void *node, int level);
+typedef int (*CompFunc)(void *node1, void *node2);
+
+typedef int (*DoFunc)(void *node, int level);
 
 typedef struct sBintree {
     Bnode *DummyHead;
@@ -32,11 +33,17 @@ typedef struct sBintree {
 } Bintree;
 
 /* Prototypes */
-Bintree *NewBintree (Bnode *dummy, CompFunc cf,
-                     int dup_ok, size_t node_size);
-Bnode   *FindBintree(Bintree *t, Bnode *n);
-int      InsBintree (Bintree *t, Bnode *n);
-Bnode   *DelBintree (Bintree *t, Bnode *n);
-int      WalkBintree(Bintree *t, DoFunc df);
-Bnode   *InitBintreeNode(size_t size);
-int      WalkBintreeByStack(Bintree *t, DoFunc df);//to do..
+Bintree *NewBintree(Bnode *dummy, CompFunc cf,
+                    int dup_ok, size_t node_size);
+
+Bnode *FindBintree(Bintree *t, Bnode *n);
+
+int InsBintree(Bintree *t, Bnode *n);
+
+Bnode *DelBintree(Bintree *t, Bnode *n);
+
+int WalkBintree(Bintree *t, DoFunc df);
+
+Bnode *InitBintreeNode(size_t size);
+
+int WalkBintreeByStack(Bintree *t, DoFunc df);//to do..
