@@ -14,6 +14,7 @@ add_executable(Hash src/Lab3/HashTest.cpp)
 
 
 add_executable(Lab4 src/Lab4/BINTREE.cpp)
+add_executable(Lab5 src/Lab5/BINTREE.C src/Lab5/STACKS.C)
 
 
 

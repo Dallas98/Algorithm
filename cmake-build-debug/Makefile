@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = F:\Project\Algorithm\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"E:\JetBrains\CLion\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"E:\JetBrains\CLion\CLion 2018.3.3\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -199,6 +199,19 @@ Lab4: cmake_check_build_system
 Lab4/fast:
 	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/build
 .PHONY : Lab4/fast
+
+#=============================================================================
+# Target rules for targets named Lab5
+
+# Build rule for target.
+Lab5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Lab5
+.PHONY : Lab5
+
+# fast build rule for target.
+Lab5/fast:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/build
+.PHONY : Lab5/fast
 
 src/HomeWork/RBTreeTest.obj: src/HomeWork/RBTreeTest.cpp.obj
 
@@ -389,13 +402,66 @@ src/Lab4/BINTREE.cpp.s:
 	$(MAKE) -f CMakeFiles\Lab4.dir\build.make CMakeFiles/Lab4.dir/src/Lab4/BINTREE.cpp.s
 .PHONY : src/Lab4/BINTREE.cpp.s
 
+src/Lab5/BINTREE.obj: src/Lab5/BINTREE.C.obj
+
+.PHONY : src/Lab5/BINTREE.obj
+
+# target to build an object file
+src/Lab5/BINTREE.C.obj:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/src/Lab5/BINTREE.C.obj
+.PHONY : src/Lab5/BINTREE.C.obj
+
+src/Lab5/BINTREE.i: src/Lab5/BINTREE.C.i
+
+.PHONY : src/Lab5/BINTREE.i
+
+# target to preprocess a source file
+src/Lab5/BINTREE.C.i:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/src/Lab5/BINTREE.C.i
+.PHONY : src/Lab5/BINTREE.C.i
+
+src/Lab5/BINTREE.s: src/Lab5/BINTREE.C.s
+
+.PHONY : src/Lab5/BINTREE.s
+
+# target to generate assembly for a file
+src/Lab5/BINTREE.C.s:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/src/Lab5/BINTREE.C.s
+.PHONY : src/Lab5/BINTREE.C.s
+
+src/Lab5/STACKS.obj: src/Lab5/STACKS.C.obj
+
+.PHONY : src/Lab5/STACKS.obj
+
+# target to build an object file
+src/Lab5/STACKS.C.obj:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/src/Lab5/STACKS.C.obj
+.PHONY : src/Lab5/STACKS.C.obj
+
+src/Lab5/STACKS.i: src/Lab5/STACKS.C.i
+
+.PHONY : src/Lab5/STACKS.i
+
+# target to preprocess a source file
+src/Lab5/STACKS.C.i:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/src/Lab5/STACKS.C.i
+.PHONY : src/Lab5/STACKS.C.i
+
+src/Lab5/STACKS.s: src/Lab5/STACKS.C.s
+
+.PHONY : src/Lab5/STACKS.s
+
+# target to generate assembly for a file
+src/Lab5/STACKS.C.s:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/src/Lab5/STACKS.C.s
+.PHONY : src/Lab5/STACKS.C.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
 	@echo ... LinkList
 	@echo ... BR
 	@echo ... SplayTree
@@ -404,6 +470,8 @@ help:
 	@echo ... Hash
 	@echo ... edit_cache
 	@echo ... Lab4
+	@echo ... Lab5
+	@echo ... rebuild_cache
 	@echo ... src/HomeWork/RBTreeTest.obj
 	@echo ... src/HomeWork/RBTreeTest.i
 	@echo ... src/HomeWork/RBTreeTest.s
@@ -425,6 +493,12 @@ help:
 	@echo ... src/Lab4/BINTREE.obj
 	@echo ... src/Lab4/BINTREE.i
 	@echo ... src/Lab4/BINTREE.s
+	@echo ... src/Lab5/BINTREE.obj
+	@echo ... src/Lab5/BINTREE.i
+	@echo ... src/Lab5/BINTREE.s
+	@echo ... src/Lab5/STACKS.obj
+	@echo ... src/Lab5/STACKS.i
+	@echo ... src/Lab5/STACKS.s
 .PHONY : help
 
 

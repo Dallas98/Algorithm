@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = F:\Project\Algorithm\cmake-build-debug
 CMakeFiles/LinkList.dir/all:
 	$(MAKE) -f CMakeFiles\LinkList.dir\build.make CMakeFiles/LinkList.dir/depend
 	$(MAKE) -f CMakeFiles\LinkList.dir\build.make CMakeFiles/LinkList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Project\Algorithm\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target LinkList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Project\Algorithm\cmake-build-debug\CMakeFiles --progress-num=12,13 "Built target LinkList"
 .PHONY : CMakeFiles/LinkList.dir/all
 
 # Include target in all.
@@ -144,7 +144,7 @@ clean: CMakeFiles/BR.dir/clean
 CMakeFiles/SplayTree.dir/all:
 	$(MAKE) -f CMakeFiles\SplayTree.dir\build.make CMakeFiles/SplayTree.dir/depend
 	$(MAKE) -f CMakeFiles\SplayTree.dir\build.make CMakeFiles/SplayTree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Project\Algorithm\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target SplayTree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Project\Algorithm\cmake-build-debug\CMakeFiles --progress-num=16,17 "Built target SplayTree"
 .PHONY : CMakeFiles/SplayTree.dir/all
 
 # Include target in all.
@@ -181,7 +181,7 @@ clean: CMakeFiles/SplayTree.dir/clean
 CMakeFiles/SeqList.dir/all:
 	$(MAKE) -f CMakeFiles\SeqList.dir\build.make CMakeFiles/SeqList.dir/depend
 	$(MAKE) -f CMakeFiles\SeqList.dir\build.make CMakeFiles/SeqList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Project\Algorithm\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target SeqList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Project\Algorithm\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target SeqList"
 .PHONY : CMakeFiles/SeqList.dir/all
 
 # Include target in all.
@@ -319,6 +319,43 @@ CMakeFiles/Lab4.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/Lab4.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Lab5.dir
+
+# All Build rule for target.
+CMakeFiles/Lab5.dir/all:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/depend
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Project\Algorithm\cmake-build-debug\CMakeFiles --progress-num=9,10,11 "Built target Lab5"
+.PHONY : CMakeFiles/Lab5.dir/all
+
+# Include target in all.
+all: CMakeFiles/Lab5.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Lab5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Project\Algorithm\cmake-build-debug\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Lab5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Project\Algorithm\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Lab5.dir/rule
+
+# Convenience name for target.
+Lab5: CMakeFiles/Lab5.dir/rule
+
+.PHONY : Lab5
+
+# clean rule for target.
+CMakeFiles/Lab5.dir/clean:
+	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/clean
+.PHONY : CMakeFiles/Lab5.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Lab5.dir/clean
 
 .PHONY : clean
 

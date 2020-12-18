@@ -1,4 +1,3 @@
-F:/Project/Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/LinkList.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/BR.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/SplayTree.dir
@@ -7,3 +6,5 @@ F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Lab2.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Hash.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
 F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Lab4.dir
+F:/Project/Algorithm/cmake-build-debug/CMakeFiles/Lab5.dir
+F:/Project/Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
