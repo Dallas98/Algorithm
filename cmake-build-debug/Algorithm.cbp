@@ -269,16 +269,6 @@
 					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Lab4">
 				<Option output="F:/Project/Algorithm/cmake-build-debug/Lab4.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
@@ -363,6 +353,100 @@
 					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Lab6">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Lab6.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab6"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab6/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Lab6.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab6/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab6_advance">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Lab6_advance.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab6_advance"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab6_advance/fast">
+				<Option output="F:/Project/Algorithm/cmake-build-debug/Lab6_advance.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/EnvironmentSettings/MinGW/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab6_advance/fast"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/EnvironmentSettings/MinGW/mingw64/bin/mingw32-make.exe -f &quot;F:/Project/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="F:/Project/Algorithm/cmake-build-debug"/>
 				<Option type="4"/>
@@ -409,6 +493,27 @@
 		</Unit>
 		<Unit filename="F:/Project/Algorithm/src/Lab5/STACKS.h">
 			<Option target="Lab5"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab6/rbtree.c">
+			<Option target="Lab6"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab6/rbtree.h">
+			<Option target="Lab6"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab6/set.c">
+			<Option target="Lab6"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab6/set.h">
+			<Option target="Lab6"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab6/set_test.c">
+			<Option target="Lab6"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab6_advance/trie.c">
+			<Option target="Lab6_advance"/>
+		</Unit>
+		<Unit filename="F:/Project/Algorithm/src/Lab6_advance/trie.h">
+			<Option target="Lab6_advance"/>
 		</Unit>
 		<Unit filename="F:/Project/Algorithm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -213,6 +213,32 @@ Lab5/fast:
 	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/build
 .PHONY : Lab5/fast
 
+#=============================================================================
+# Target rules for targets named Lab6
+
+# Build rule for target.
+Lab6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Lab6
+.PHONY : Lab6
+
+# fast build rule for target.
+Lab6/fast:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/build
+.PHONY : Lab6/fast
+
+#=============================================================================
+# Target rules for targets named Lab6_advance
+
+# Build rule for target.
+Lab6_advance: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Lab6_advance
+.PHONY : Lab6_advance
+
+# fast build rule for target.
+Lab6_advance/fast:
+	$(MAKE) -f CMakeFiles\Lab6_advance.dir\build.make CMakeFiles/Lab6_advance.dir/build
+.PHONY : Lab6_advance/fast
+
 src/HomeWork/RBTreeTest.obj: src/HomeWork/RBTreeTest.cpp.obj
 
 .PHONY : src/HomeWork/RBTreeTest.obj
@@ -456,6 +482,114 @@ src/Lab5/STACKS.C.s:
 	$(MAKE) -f CMakeFiles\Lab5.dir\build.make CMakeFiles/Lab5.dir/src/Lab5/STACKS.C.s
 .PHONY : src/Lab5/STACKS.C.s
 
+src/Lab6/rbtree.obj: src/Lab6/rbtree.c.obj
+
+.PHONY : src/Lab6/rbtree.obj
+
+# target to build an object file
+src/Lab6/rbtree.c.obj:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/rbtree.c.obj
+.PHONY : src/Lab6/rbtree.c.obj
+
+src/Lab6/rbtree.i: src/Lab6/rbtree.c.i
+
+.PHONY : src/Lab6/rbtree.i
+
+# target to preprocess a source file
+src/Lab6/rbtree.c.i:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/rbtree.c.i
+.PHONY : src/Lab6/rbtree.c.i
+
+src/Lab6/rbtree.s: src/Lab6/rbtree.c.s
+
+.PHONY : src/Lab6/rbtree.s
+
+# target to generate assembly for a file
+src/Lab6/rbtree.c.s:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/rbtree.c.s
+.PHONY : src/Lab6/rbtree.c.s
+
+src/Lab6/set.obj: src/Lab6/set.c.obj
+
+.PHONY : src/Lab6/set.obj
+
+# target to build an object file
+src/Lab6/set.c.obj:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/set.c.obj
+.PHONY : src/Lab6/set.c.obj
+
+src/Lab6/set.i: src/Lab6/set.c.i
+
+.PHONY : src/Lab6/set.i
+
+# target to preprocess a source file
+src/Lab6/set.c.i:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/set.c.i
+.PHONY : src/Lab6/set.c.i
+
+src/Lab6/set.s: src/Lab6/set.c.s
+
+.PHONY : src/Lab6/set.s
+
+# target to generate assembly for a file
+src/Lab6/set.c.s:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/set.c.s
+.PHONY : src/Lab6/set.c.s
+
+src/Lab6/set_test.obj: src/Lab6/set_test.c.obj
+
+.PHONY : src/Lab6/set_test.obj
+
+# target to build an object file
+src/Lab6/set_test.c.obj:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/set_test.c.obj
+.PHONY : src/Lab6/set_test.c.obj
+
+src/Lab6/set_test.i: src/Lab6/set_test.c.i
+
+.PHONY : src/Lab6/set_test.i
+
+# target to preprocess a source file
+src/Lab6/set_test.c.i:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/set_test.c.i
+.PHONY : src/Lab6/set_test.c.i
+
+src/Lab6/set_test.s: src/Lab6/set_test.c.s
+
+.PHONY : src/Lab6/set_test.s
+
+# target to generate assembly for a file
+src/Lab6/set_test.c.s:
+	$(MAKE) -f CMakeFiles\Lab6.dir\build.make CMakeFiles/Lab6.dir/src/Lab6/set_test.c.s
+.PHONY : src/Lab6/set_test.c.s
+
+src/Lab6_advance/trie.obj: src/Lab6_advance/trie.c.obj
+
+.PHONY : src/Lab6_advance/trie.obj
+
+# target to build an object file
+src/Lab6_advance/trie.c.obj:
+	$(MAKE) -f CMakeFiles\Lab6_advance.dir\build.make CMakeFiles/Lab6_advance.dir/src/Lab6_advance/trie.c.obj
+.PHONY : src/Lab6_advance/trie.c.obj
+
+src/Lab6_advance/trie.i: src/Lab6_advance/trie.c.i
+
+.PHONY : src/Lab6_advance/trie.i
+
+# target to preprocess a source file
+src/Lab6_advance/trie.c.i:
+	$(MAKE) -f CMakeFiles\Lab6_advance.dir\build.make CMakeFiles/Lab6_advance.dir/src/Lab6_advance/trie.c.i
+.PHONY : src/Lab6_advance/trie.c.i
+
+src/Lab6_advance/trie.s: src/Lab6_advance/trie.c.s
+
+.PHONY : src/Lab6_advance/trie.s
+
+# target to generate assembly for a file
+src/Lab6_advance/trie.c.s:
+	$(MAKE) -f CMakeFiles\Lab6_advance.dir\build.make CMakeFiles/Lab6_advance.dir/src/Lab6_advance/trie.c.s
+.PHONY : src/Lab6_advance/trie.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -468,9 +602,11 @@ help:
 	@echo ... SeqList
 	@echo ... Lab2
 	@echo ... Hash
-	@echo ... edit_cache
 	@echo ... Lab4
 	@echo ... Lab5
+	@echo ... Lab6
+	@echo ... Lab6_advance
+	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... src/HomeWork/RBTreeTest.obj
 	@echo ... src/HomeWork/RBTreeTest.i
@@ -499,6 +635,18 @@ help:
 	@echo ... src/Lab5/STACKS.obj
 	@echo ... src/Lab5/STACKS.i
 	@echo ... src/Lab5/STACKS.s
+	@echo ... src/Lab6/rbtree.obj
+	@echo ... src/Lab6/rbtree.i
+	@echo ... src/Lab6/rbtree.s
+	@echo ... src/Lab6/set.obj
+	@echo ... src/Lab6/set.i
+	@echo ... src/Lab6/set.s
+	@echo ... src/Lab6/set_test.obj
+	@echo ... src/Lab6/set_test.i
+	@echo ... src/Lab6/set_test.s
+	@echo ... src/Lab6_advance/trie.obj
+	@echo ... src/Lab6_advance/trie.i
+	@echo ... src/Lab6_advance/trie.s
 .PHONY : help
 
 

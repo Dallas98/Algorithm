@@ -394,8 +394,7 @@ int CompareFunc(void *n1, void *n2) {
 }
 
 
-int WalkBintreeByStack(Bintree *t, DoFunc df)//yyw
-{
+int WalkBintreeByStack(Bintree *t, DoFunc df) {
     Stack *stack = CreateStack(40);
     if (stack == NULL) {
         fprintf(stderr, "Insufficient Memory\n");
@@ -410,24 +409,32 @@ int WalkBintreeByStack(Bintree *t, DoFunc df)//yyw
 
     Bnode *bnode = t->DummyHead->link[RIGHT];
     if (bnode == NULL) {
-        printf("The tree is emtpy");
-        exit(0);
+        printf("Emtpy tree\n");
+        return TREE_FAIL;
     }
     stkElement = reinterpret_cast<StkElement *>(bnode);
-    StkElement *temp;
 
+    int level = 0;
+    int left = 0;
     // @resources/Lab5_2.DAT
     while (stkElement || stack->top > -1) {
+        //当前结点有左孩子，将左孩子入栈
         while (stkElement) {
             PushElement(stack, stkElement);
             stkElement = stkElement->link[LEFT];
+            level++;
+            left++;
         }
-        stkElement = &(stack->base)[stack->top];
+        stkElement = &(stack->base)[stack->top];//保存当前栈顶指针
         if (stack->top > -1) {
             PopElement(stack, stkElement);
-            printf("%s ", stkElement->text);
-            //df(stkElement, level);
-            stkElement = stkElement->link[RIGHT];
+            //printf("%s ", stkElement->text);
+            df(stkElement, --level);
+            stkElement = stkElement->link[RIGHT];//右孩子入栈
+            left--;
+            if(!left){
+                level++;
+            }
         }
     }
     printf("\n");

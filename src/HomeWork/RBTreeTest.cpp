@@ -14,7 +14,7 @@ int main()
 {
     int a[]= {3,2,1,4,5,6,7,10,9,8};
     int check_insert=1;    // "插入"动作的检测开关(0，关闭；1，打开)
-    int check_remove=0;    // "删除"动作的检测开关(0，关闭；1，打开)
+    int check_remove=1;    // "删除"动作的检测开关(0，关闭；1，打开)
     int i;
     int ilen = (sizeof(a)) / (sizeof(a[0])) ;
     RBTree<int>* tree=new RBTree<int>();

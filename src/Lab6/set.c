@@ -10,14 +10,12 @@
 
 //构建Set
 Set *init(){
-    Set *set = (Set*)malloc(sizeof(Set));
-    set = create_rbtree();
+    Set *set = create_rbtree();
     return set;
 }
 
 //初始化集合
 void set_init(Set *set, int data[],int size) {
-    //set = create_rbtree();
     for (int i = 0; i < size; i++) {
         set_insert(set, data[i]);
     }
@@ -65,6 +63,7 @@ int set_intersection(Set *seti, const Set *set1, const Set *set2) {
     while (min1 && min2) {
         compare = rb_key(min1) - rb_key(min2);
         if (compare == 0) {
+            //当前结点元素相等，插入新seti中
             set_insert(seti, rb_key(min1));
             min1 = rbtree_successor(min1);
             min2 = rbtree_successor(min2);

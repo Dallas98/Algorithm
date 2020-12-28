@@ -8,16 +8,21 @@
 #include <assert.h>
 #include <string.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include "trie.h"
 
 int main() {
+    system("chcp 65001");
     Trie *trie = trieCreate();
+    printf("插入单词apple后。\n");
     trieInsert(trie, "apple");
-    printf("%d\n", trieSearch(trie, "apple"));
-    printf("%d\n", trieSearch(trie, "app"));
-    printf("%d\n", trieStartsWith(trie, "app"));
+    printf("返回1表示查询成功，0表示查询失败\n");
+    printf("是否存在单词apple:\t%d\n", trieSearch(trie, "apple"));
+    printf("是否存在单词app:\t%d\n", trieSearch(trie, "app"));
+    printf("是否存在前缀app:\t%d\n", trieStartsWith(trie, "app"));
+    printf("插入单词app后。\n");
     trieInsert(trie, "app");
-    printf("%d\n", trieSearch(trie, "app"));
+    printf("是否存在单词app:\t%d\n", trieSearch(trie, "app"));
 }
 
 //创建trie树
