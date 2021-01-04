@@ -12,6 +12,10 @@
     <file url="file://$PROJECT_DIR$/src/Lab6/rbtree.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/Lab6/rbtree.h" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/Lab6/rbtree_test.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab7/Graph.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab7/Graph.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab7/Test.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Lab7_1/graph.cpp" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

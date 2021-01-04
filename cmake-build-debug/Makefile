@@ -239,6 +239,32 @@ Lab6_advance/fast:
 	$(MAKE) -f CMakeFiles\Lab6_advance.dir\build.make CMakeFiles/Lab6_advance.dir/build
 .PHONY : Lab6_advance/fast
 
+#=============================================================================
+# Target rules for targets named Lab7
+
+# Build rule for target.
+Lab7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Lab7
+.PHONY : Lab7
+
+# fast build rule for target.
+Lab7/fast:
+	$(MAKE) -f CMakeFiles\Lab7.dir\build.make CMakeFiles/Lab7.dir/build
+.PHONY : Lab7/fast
+
+#=============================================================================
+# Target rules for targets named Lab7_1
+
+# Build rule for target.
+Lab7_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Lab7_1
+.PHONY : Lab7_1
+
+# fast build rule for target.
+Lab7_1/fast:
+	$(MAKE) -f CMakeFiles\Lab7_1.dir\build.make CMakeFiles/Lab7_1.dir/build
+.PHONY : Lab7_1/fast
+
 src/HomeWork/RBTreeTest.obj: src/HomeWork/RBTreeTest.cpp.obj
 
 .PHONY : src/HomeWork/RBTreeTest.obj
@@ -590,6 +616,90 @@ src/Lab6_advance/trie.c.s:
 	$(MAKE) -f CMakeFiles\Lab6_advance.dir\build.make CMakeFiles/Lab6_advance.dir/src/Lab6_advance/trie.c.s
 .PHONY : src/Lab6_advance/trie.c.s
 
+src/Lab7/Graph.obj: src/Lab7/Graph.cpp.obj
+
+.PHONY : src/Lab7/Graph.obj
+
+# target to build an object file
+src/Lab7/Graph.cpp.obj:
+	$(MAKE) -f CMakeFiles\BR.dir\build.make CMakeFiles/BR.dir/src/Lab7/Graph.cpp.obj
+	$(MAKE) -f CMakeFiles\Lab7.dir\build.make CMakeFiles/Lab7.dir/src/Lab7/Graph.cpp.obj
+.PHONY : src/Lab7/Graph.cpp.obj
+
+src/Lab7/Graph.i: src/Lab7/Graph.cpp.i
+
+.PHONY : src/Lab7/Graph.i
+
+# target to preprocess a source file
+src/Lab7/Graph.cpp.i:
+	$(MAKE) -f CMakeFiles\BR.dir\build.make CMakeFiles/BR.dir/src/Lab7/Graph.cpp.i
+	$(MAKE) -f CMakeFiles\Lab7.dir\build.make CMakeFiles/Lab7.dir/src/Lab7/Graph.cpp.i
+.PHONY : src/Lab7/Graph.cpp.i
+
+src/Lab7/Graph.s: src/Lab7/Graph.cpp.s
+
+.PHONY : src/Lab7/Graph.s
+
+# target to generate assembly for a file
+src/Lab7/Graph.cpp.s:
+	$(MAKE) -f CMakeFiles\BR.dir\build.make CMakeFiles/BR.dir/src/Lab7/Graph.cpp.s
+	$(MAKE) -f CMakeFiles\Lab7.dir\build.make CMakeFiles/Lab7.dir/src/Lab7/Graph.cpp.s
+.PHONY : src/Lab7/Graph.cpp.s
+
+src/Lab7/Test.obj: src/Lab7/Test.cpp.obj
+
+.PHONY : src/Lab7/Test.obj
+
+# target to build an object file
+src/Lab7/Test.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab7.dir\build.make CMakeFiles/Lab7.dir/src/Lab7/Test.cpp.obj
+.PHONY : src/Lab7/Test.cpp.obj
+
+src/Lab7/Test.i: src/Lab7/Test.cpp.i
+
+.PHONY : src/Lab7/Test.i
+
+# target to preprocess a source file
+src/Lab7/Test.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab7.dir\build.make CMakeFiles/Lab7.dir/src/Lab7/Test.cpp.i
+.PHONY : src/Lab7/Test.cpp.i
+
+src/Lab7/Test.s: src/Lab7/Test.cpp.s
+
+.PHONY : src/Lab7/Test.s
+
+# target to generate assembly for a file
+src/Lab7/Test.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab7.dir\build.make CMakeFiles/Lab7.dir/src/Lab7/Test.cpp.s
+.PHONY : src/Lab7/Test.cpp.s
+
+src/Lab7_1/graph.obj: src/Lab7_1/graph.cpp.obj
+
+.PHONY : src/Lab7_1/graph.obj
+
+# target to build an object file
+src/Lab7_1/graph.cpp.obj:
+	$(MAKE) -f CMakeFiles\Lab7_1.dir\build.make CMakeFiles/Lab7_1.dir/src/Lab7_1/graph.cpp.obj
+.PHONY : src/Lab7_1/graph.cpp.obj
+
+src/Lab7_1/graph.i: src/Lab7_1/graph.cpp.i
+
+.PHONY : src/Lab7_1/graph.i
+
+# target to preprocess a source file
+src/Lab7_1/graph.cpp.i:
+	$(MAKE) -f CMakeFiles\Lab7_1.dir\build.make CMakeFiles/Lab7_1.dir/src/Lab7_1/graph.cpp.i
+.PHONY : src/Lab7_1/graph.cpp.i
+
+src/Lab7_1/graph.s: src/Lab7_1/graph.cpp.s
+
+.PHONY : src/Lab7_1/graph.s
+
+# target to generate assembly for a file
+src/Lab7_1/graph.cpp.s:
+	$(MAKE) -f CMakeFiles\Lab7_1.dir\build.make CMakeFiles/Lab7_1.dir/src/Lab7_1/graph.cpp.s
+.PHONY : src/Lab7_1/graph.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -606,6 +716,8 @@ help:
 	@echo ... Lab5
 	@echo ... Lab6
 	@echo ... Lab6_advance
+	@echo ... Lab7
+	@echo ... Lab7_1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... src/HomeWork/RBTreeTest.obj
@@ -647,6 +759,15 @@ help:
 	@echo ... src/Lab6_advance/trie.obj
 	@echo ... src/Lab6_advance/trie.i
 	@echo ... src/Lab6_advance/trie.s
+	@echo ... src/Lab7/Graph.obj
+	@echo ... src/Lab7/Graph.i
+	@echo ... src/Lab7/Graph.s
+	@echo ... src/Lab7/Test.obj
+	@echo ... src/Lab7/Test.i
+	@echo ... src/Lab7/Test.s
+	@echo ... src/Lab7_1/graph.obj
+	@echo ... src/Lab7_1/graph.i
+	@echo ... src/Lab7_1/graph.s
 .PHONY : help
 
 

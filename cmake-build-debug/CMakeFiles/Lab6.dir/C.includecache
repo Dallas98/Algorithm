@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Project/Algorithm/src/Lab6/rbtree.h
+
+F:/Project/Algorithm/src/Lab6/set.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+set.h
+F:/Project/Algorithm/src/Lab6/set.h
+
+F:/Project/Algorithm/src/Lab6/set.h
+rbtree.h
+F:/Project/Algorithm/src/Lab6/rbtree.h
+
+F:/Project/Algorithm/src/Lab6/set_test.c
+stdio.h
+-
+stdlib.h
+-
+set.h
+F:/Project/Algorithm/src/Lab6/set.h
+

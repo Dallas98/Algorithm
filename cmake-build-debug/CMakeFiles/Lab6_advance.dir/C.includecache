@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Project/Algorithm/src/Lab6_advance/trie.c
+stdio.h
+-
+malloc.h
+-
+memory.h
+-
+assert.h
+-
+string.h
+-
+stdbool.h
+-
+stdlib.h
+-
+trie.h
+F:/Project/Algorithm/src/Lab6_advance/trie.h
+
+F:/Project/Algorithm/src/Lab6_advance/trie.h
+
